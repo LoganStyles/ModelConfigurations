@@ -9,3 +9,18 @@ namespace ModelConfigurations.Entities
         public Employee Employee { get; set; }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
