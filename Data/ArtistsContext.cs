@@ -13,7 +13,7 @@ namespace ModelConfigurations.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Publisher>();
+            modelBuilder.Entity<Promoter>();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

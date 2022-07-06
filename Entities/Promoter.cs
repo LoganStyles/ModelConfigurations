@@ -1,6 +1,6 @@
 namespace ModelConfigurations.Entities
 {
-    public class Publisher
+    public class Promoter
     {
         public long Id { get; set; }
         public string UserName { get; set; }
