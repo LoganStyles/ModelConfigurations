@@ -1,12 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace ModelConfigurations.Entities
 {
-    public class Album
+    [Comment("Events for the year")]
+    public class Event
     {
         public long Id { get; set; }
         public string Title { get; set; }
-        public double Price { get; set; }
-
-        public Employee Employee { get; set; }
+        public DateTime EventDate { get; set; }
     }
 }
 
