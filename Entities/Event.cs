@@ -2,15 +2,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ModelConfigurations.Entities
 {
-    [Comment("Events for the year")]
     public class Event
     {
         public long Id { get; set; }
         public string Title { get; set; }
+
+        [Comment("The date of the event")]
         public DateTime EventDate { get; set; }
     }
 }
-
 
 
 
