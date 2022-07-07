@@ -10,6 +10,7 @@ namespace ModelConfigurations.Data
         public ArtistsContext(DbContextOptions<ArtistsContext> options) : base(options) { }
 
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Event> Events { get; set; }
         public DbSet<SalesOutlet> SalesOutlets { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
