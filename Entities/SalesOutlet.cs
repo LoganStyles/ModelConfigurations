@@ -1,12 +1,16 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace ModelConfigurations.Entities
 {
-    public class Promoter
+    [NotMapped]
+    public class SalesOutlet
     {
         public long Id { get; set; }
-        public string UserName { get; set; }
+        public string Title { get; set; }
         public string Address { get; set; }
     }
 }
+
 
 
 

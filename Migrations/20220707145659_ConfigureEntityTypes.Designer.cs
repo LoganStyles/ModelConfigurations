@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ModelConfigurations.Data;
 
@@ -10,9 +11,10 @@ using ModelConfigurations.Data;
 namespace ModelConfigurations.Migrations
 {
     [DbContext(typeof(ArtistsContext))]
-    partial class ArtistsContextModelSnapshot : ModelSnapshot
+    [Migration("20220707145659_ConfigureEntityTypes")]
+    partial class ConfigureEntityTypes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.2");
