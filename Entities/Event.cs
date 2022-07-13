@@ -5,9 +5,10 @@ namespace ModelConfigurations.Entities
 {
     public class Event
     {
-        [Key]
         public long Id { get; set; }
-        public long ScheduleId { get; set; }
+        
+        [Key]
+        public long EventId { get; set; }
         public string Title { get; set; }
 
         [Comment("The date of the event")]
