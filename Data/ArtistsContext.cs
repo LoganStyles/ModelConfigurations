@@ -26,17 +26,3 @@ namespace ModelConfigurations.Data
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
