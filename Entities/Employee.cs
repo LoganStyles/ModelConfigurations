@@ -1,5 +1,3 @@
-using System.ComponentModel.DataAnnotations.Schema;
-
 namespace ModelConfigurations.Entities
 {
     public class Employee
@@ -10,17 +8,3 @@ namespace ModelConfigurations.Entities
         public long Age { get; set; }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
