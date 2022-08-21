@@ -11,18 +11,3 @@ namespace ModelConfigurations.Entities
         public string Address { get; set; }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
