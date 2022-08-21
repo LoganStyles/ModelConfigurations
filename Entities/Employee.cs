@@ -8,18 +8,3 @@ namespace ModelConfigurations.Entities
         public long Age { get; set; }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
