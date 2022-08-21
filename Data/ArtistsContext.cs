@@ -15,6 +15,11 @@ namespace ModelConfigurations.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Ignore<SalesOutlet>();
+
+            modelBuilder.Entity<Employee>().ToTable("Artists");
+
+            modelBuilder.Entity<Event>().HasComment("Events for the year");
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -26,18 +31,3 @@ namespace ModelConfigurations.Data
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

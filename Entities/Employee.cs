@@ -1,8 +1,5 @@
-using System.ComponentModel.DataAnnotations.Schema;
-
 namespace ModelConfigurations.Entities
 {
-    [Table("Artists")]
     public class Employee
     {
         public long Id { get; set; }
