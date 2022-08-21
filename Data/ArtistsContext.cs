@@ -15,16 +15,23 @@ namespace ModelConfigurations.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<SalesOutlet>().Ignore(s => s.Address);
+            modelBuilder
+                .Entity<SalesOutlet>()
+                .Ignore(s => s.Address);
 
-            modelBuilder.Entity<Employee>().Property(e => e.LastName).HasColumnName("Surname");
+            modelBuilder
+                .Entity<Employee>()
+                .Property(e => e.LastName)
+                .HasColumnName("Surname");
 
             modelBuilder
                 .Entity<Event>()
                 .Property(e => e.EventDate)
                 .HasComment("The date of the event");
 
-            modelBuilder.Entity<Event>().HasKey(ev => ev.EventId);
+            modelBuilder
+                .Entity<Event>()
+                .HasKey(ev => ev.EventId);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
