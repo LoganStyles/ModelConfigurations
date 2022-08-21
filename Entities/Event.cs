@@ -7,17 +7,3 @@ namespace ModelConfigurations.Entities
         public DateTime EventDate { get; set; }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
