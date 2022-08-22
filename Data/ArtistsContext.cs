@@ -13,6 +13,9 @@ namespace ModelConfigurations.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Person>()
+                .Property(p => p.LastName)
+                .IsRequired();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
