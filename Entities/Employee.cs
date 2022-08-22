@@ -10,18 +10,3 @@ namespace ModelConfigurations.Entities
         public ICollection<Album> Albums { get; set; }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
