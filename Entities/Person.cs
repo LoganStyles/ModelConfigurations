@@ -1,6 +1,6 @@
 namespace ModelConfigurations.Entities
 {
-    public class Employee
+    public class Person
     {
         public long Id { get; set; }
         public string FirstName { get; set; }

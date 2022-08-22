@@ -9,7 +9,7 @@ namespace ModelConfigurations.Data
 
         public ArtistsContext(DbContextOptions<ArtistsContext> options) : base(options) { }
 
-        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Person> People { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
