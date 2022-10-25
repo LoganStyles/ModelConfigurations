@@ -29,7 +29,8 @@ namespace ModelConfigurations.Models.Data
             }
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder){
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
 
         }
 
