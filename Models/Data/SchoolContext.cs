@@ -30,7 +30,12 @@ namespace ModelConfigurations.Models.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Instructor>().ToTable("Teachers");
 
+            modelBuilder.Entity<Instructor>()
+            .HasOne(d => d.Department)
+            .WithMany(i => i.Instructors)
+            .HasForeignKey(inst => inst.DepartmentCode);
         }
 
     }
